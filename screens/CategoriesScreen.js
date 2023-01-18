@@ -11,6 +11,7 @@ const CategoriesScreen = () => {
       color={item.color}
     />}
     keyExtractor={item => item.id}
+    numColumns={2}
   />;
 
 };
