@@ -14,13 +14,13 @@ const CategoriesScreen = ({ navigation }) => {
     data={CATEGORIES}
     renderItem={({ item }) => <CategoryGridTile
       title={item.title}
+      imageUrl={item.imageUrl}
       color={item.color}
-      onPress={pressHandler.bind(null, 1)}
+      onPress={pressHandler.bind(null, item.id)}
     />}
     keyExtractor={item => item.id}
     numColumns={2}
   />;
-
 };
 
 export default CategoriesScreen;
